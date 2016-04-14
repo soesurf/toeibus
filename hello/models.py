@@ -35,7 +35,7 @@ class Bus(models.Model):
 
     def __handle_work__(self, line):
         if line == 'harumi':
-            self.from_and_to = 'ほっとプラザはるみ前 -> 丸の内行き'
+            self.from_and_to = 'ほっとプラザはるみ前 -> 丸の内行き!'
         else:
             self.from_and_to = '新島橋 -> 亀戸行き'
 
