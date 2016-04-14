@@ -26,7 +26,7 @@ class Bus(models.Model):
 
     def __init__(self, line):
 
-        self.japan_time = datetime.now() + timedelta(hours=9)
+        self.japan_time = datetime.now() + timedelta(hours=1)
         self.current_time = self.japan_time.strftime("%H:%M:%S")
         self.current_time_as_int = int(self.japan_time.strftime("%H%M"))
         self.current_date = self.japan_time.date()
